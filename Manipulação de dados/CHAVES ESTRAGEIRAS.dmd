@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CHAVES ESTRAGEIRAS" id="9C1CBC24-CDB9-8C74-C9C9-6A723C6E2E45" version="3.5">
+<createdBy>vitor</createdBy>
+<createdTime>2024-12-19 14:13:24 UTC</createdTime>
+<ownerDesignName>CHAVES ESTRAGEIRAS</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9C1CBC24-CDB9-8C74-C9C9-6A723C6E2E45</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="9C1CBC24-CDB9-8C74-C9C9-6A723C6E2E45">
+<designStoragePath>C:\Sem título_1</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="9A290146-84CC-106D-1F89-0BA1071C7884">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

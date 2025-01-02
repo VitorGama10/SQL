@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DADOS" id="8ED77A81-FDC5-D25F-2DD3-5B24894FEDD2" version="3.5">
+<createdBy>vitor</createdBy>
+<createdTime>2024-12-19 18:09:46 UTC</createdTime>
+<ownerDesignName>DADOS</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8ED77A81-FDC5-D25F-2DD3-5B24894FEDD2</designId>
+</OSDM_Design>
