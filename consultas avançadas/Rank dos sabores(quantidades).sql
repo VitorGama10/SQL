@@ -1,0 +1,21 @@
+# % DOS SABORES, RANK 
+SELECT venda_sabor.SABOR, venda_sabor.ANO, venda_sabor.QUANTIDADES,
+       ROUND((venda_sabor.QUANTIDADES / venda_total.QUANTIDADES)*100, 2) AS Participação
+FROM (
+    SELECT tp.SABOR, YEAR(nf.DATA_VENDA) AS ANO, SUM(inf.QUANTIDADE) AS QUANTIDADES # AQUI A SOMA DAS QUATIDADES
+    FROM tabela_de_produtos TP
+    INNER JOIN itens_notas_fiscais INF ON tp.CODIGO_DO_PRODUTO = INF.CODIGO_DO_PRODUTO
+    INNER JOIN notas_fiscais nf ON nf.NUMERO = INF.NUMERO
+    WHERE YEAR(NF.DATA_VENDA) = 2016
+    GROUP BY tp.SABOR, YEAR(nf.DATA_VENDA)
+) AS venda_sabor # 
+INNER JOIN (
+    SELECT YEAR(nf.DATA_VENDA) AS ANO, SUM(inf.QUANTIDADE) AS QUANTIDADES
+    FROM tabela_de_produtos TP
+    INNER JOIN itens_notas_fiscais INF ON TP.CODIGO_DO_PRODUTO = INF.CODIGO_DO_PRODUTO
+    INNER JOIN notas_fiscais NF ON nf.NUMERO = INF.NUMERO
+	WHERE YEAR(NF.DATA_VENDA) = 2016
+    GROUP BY YEAR(NF.DATA_VENDA)
+) AS venda_total # VENDAS TOTAL
+ON venda_sabor.ANO = venda_total.ANO
+ORDER BY Participação DESC;

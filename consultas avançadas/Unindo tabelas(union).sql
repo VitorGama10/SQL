@@ -1,0 +1,11 @@
+SELECT * FROM tabela_de_clientes;
+
+/*UNINDO AS TABELAS*/
+SELECT BAIRRO, NOME, 'VENDEDORES' AS TIPO_VENDEDOR
+FROM tabela_de_vendedores
+UNION ALL
+SELECT BAIRRO, NOME, 'CLIENTE' AS TIPO_CLIENTE
+FROM tabela_de_clientes;
+
+
+
