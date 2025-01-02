@@ -1,2 +1,2 @@
-# SQL---Manipulacao-de-dados
+# SQL
 Exemplos praticos, para quem deseja aprender um pouco sobre manipulação de dados 
