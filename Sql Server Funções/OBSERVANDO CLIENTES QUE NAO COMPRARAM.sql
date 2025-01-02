@@ -1,0 +1,3 @@
+select DISTINCT a.nome, b.cpf from [TABELA DE CLIENTES] A
+LEFT JOIN [NOTAS FISCAIS] B 
+ON A.CPF = B.CPF;
